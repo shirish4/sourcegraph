@@ -181,7 +181,7 @@ const MemoizedExecuteBatchSpecContent: React.FunctionComponent<
                     )}
                     {batchSpec.startedAt && (
                         <ExecutionStat>
-                            <ProgressClockIcon />
+                            <Icon aria-label="Duration" as={ProgressClockIcon} />
                             <Duration start={batchSpec.startedAt} end={batchSpec.finishedAt ?? undefined} />
                         </ExecutionStat>
                     )}
